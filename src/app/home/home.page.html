@@ -15,7 +15,7 @@
   </ion-card>
 
   <ion-button expand="block" class="ion-margin" (click)="startScan()">Scan QR Code</ion-button>
-  <ion-item>
+  <ion-item *ngIf="scannedResult">
     <ion-label class="ion-text-wrap">Scanned Result: {{ scannedResult }}</ion-label>
   </ion-item>
 
