@@ -1,8 +1,6 @@
 <ion-header [style.visibility]="content_visibility">
-  <ion-toolbar color="primary ion-text-center">
-    <ion-title>
-      QR & Bar Code
-    </ion-title>
+  <ion-toolbar color="light ion-text-center">
+    <ion-img scr="assets/img/logo.png"></ion-img>
   </ion-toolbar>
 </ion-header>
 
@@ -10,7 +8,7 @@
 
   <ion-card class="ion-text-center">
     <ion-card-header>
-      QR Code
+      Código QR
     </ion-card-header>
     <ion-card-content>
       <qrcode [qrdata]="qrCodeString" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
@@ -23,7 +21,7 @@
 
   <ion-card class="ion-text-center">
     <ion-card-header>
-      Bar Code
+      Código de Barras
     </ion-card-header>
     <ion-card-content>
       <img id="barcode">
@@ -34,6 +32,6 @@
     <ion-label class="ion-text-wrap">Bar Code Scanned Result: {{ barScannedResult }}</ion-label>
   </ion-item>
 
-  <ion-button expand="block" class="ion-margin" (click)="startScan()">Scan</ion-button>
+  <ion-button expand="block" class="ion-margin" (click)="startScan()">Escanear</ion-button>
 
 </ion-content>
